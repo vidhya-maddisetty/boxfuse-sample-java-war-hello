@@ -1,6 +1,6 @@
 node {
  tools {
-    maven 'maven'
+    maven 'M3'
   }
 stage ('gitclone') {
 git 'https://github.com/vidhya-maddisetty/boxfuse-sample-java-war-hello.git
