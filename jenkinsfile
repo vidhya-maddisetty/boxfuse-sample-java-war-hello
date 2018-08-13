@@ -1,5 +1,5 @@
+def mvnhome = tool 'maven'
 node {
-def mvnhome
 stage ('Build') {
 if (isUnix()) {
 sh "'${mvnhome}/bin/mvn' -Dmaven.test.failure.ignore clean install"
