@@ -1,15 +1,9 @@
 node {
- tools {
-    maven 'M3'
-  }
-stage ('gitclone') {
-git 'https://github.com/vidhya-maddisetty/boxfuse-sample-java-war-hello.git
-}
 stage ('Build') {
 if (isUnix()) {
-sh "mvn -Dmaven.test.failure.ignore clean install"
+sh "/usr/bin/mvn -Dmaven.test.failure.ignore clean install"
 } else {
-bat(/"mvn" -Dmaven.test.failure.ignore clean install/)
+bat(/"/usr/bin/mvn" -Dmaven.test.failure.ignore clean install/)
 } 
 }
 }
