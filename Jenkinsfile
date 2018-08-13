@@ -1,8 +1,6 @@
 node {
-stage ('gitclone') {
-git 'https://github.com/vidhya-maddisetty/boxfuse-sample-java-war-hello.git'
-}
 stage ('Build') {
+checkout scm
 sh "/usr/bin/mvn -Dmaven.test.failure.ignore clean install"
 }
 }
