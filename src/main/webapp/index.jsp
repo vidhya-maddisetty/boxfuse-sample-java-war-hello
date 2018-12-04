@@ -33,7 +33,7 @@
 <P style="margin-bottom: 20px;">
     List all Bootable Apps:<br/>
     <strong>boxfuse ls</strong>
-</p>
+ </p>
 
 <p>
     Gracefully kill the Instance:<br/>
