@@ -9,4 +9,4 @@ archiveArtifacts artifacts: '*.war', onlyIfSuccessful: true
  stage ('Display Artifact') {
  sh "ls -ltr *.zip"  
  }   
- }
+}
