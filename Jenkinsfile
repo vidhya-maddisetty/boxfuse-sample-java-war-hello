@@ -7,6 +7,6 @@ stage ('Archive Artifacts') {
 archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
 }
  stage ('Display Artifact') {
- sh "ls -ltr *.zip"  
+ sh "ls -ltr target/*.war"  
   }   
 }
