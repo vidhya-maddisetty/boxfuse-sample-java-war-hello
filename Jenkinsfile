@@ -3,7 +3,7 @@ stage ('Build') {
 checkout scm
 sh "/usr/bin/mvn -Dmaven.test.failure.ignore clean install"
 }
-stage ('Archive Artifacts') {
+stage ('Archive Artifact') {
 archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
 }
  stage ('Display Artifact') {
